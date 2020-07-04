@@ -5,7 +5,7 @@
 replicaCount: 3
 
 image:
-  repository: wardviaene/node-demo-app
+  repository: wyleong321/node-demo-app
   tag: v0.0.1
   pullPolicy: IfNotPresent
 
@@ -20,7 +20,7 @@ ingress:
     # kubernetes.io/tls-acme: "true"
   path: /
   hosts:
-    - node-demo-app.newtech.academy
+    - node-demo-app.drynonlag.com
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:

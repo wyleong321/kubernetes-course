@@ -1,9 +1,9 @@
 #!/bin/bash
-DEFAULT_REGION="eu-west-1"
+DEFAULT_REGION="us-west-1"
 AWS_REGION="${AWS_REGION:-${DEFAULT_REGION}}"
 
-BUCKET="helm-rytcufor"
-NODE_ROLE_ARN="arn:aws:iam::*"
+BUCKET="helm-wleong42"
+NODE_ROLE_ARN="arn:aws:iam::607972139706:role/nodes.k8.drynonlag.com"
 
 export AWS_REGION
 

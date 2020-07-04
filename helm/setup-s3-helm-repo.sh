@@ -3,10 +3,12 @@
 set -e
 
 # create random string
-RANDOM_STRING=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 8 | tr '[:upper:]' '[:lower:]' | head -n 1)
+#RANDOM_STRING=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 8 | tr '[:upper:]' '[:lower:]' | head -n 1)
+RANDOM_STRING=wleong42
+
 
 # it's important to set the AWS_REGION if not set. Change the default
-DEFAULT_REGION="eu-west-1"
+DEFAULT_REGION="us-west-1"
 AWS_REGION="${AWS_REGION:-${DEFAULT_REGION}}"
 
 export AWS_REGION
