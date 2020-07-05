@@ -20,7 +20,6 @@ pipeline {
           PACKAGE=demo-chart
           export AWS_REGION=us-west-1
          
-          cp -r /home/helm/.helm ~
           helm repo add my-charts s3://${HELM_BUCKET}/charts
           cd helm/${PACKAGE}
           helm dependency update
